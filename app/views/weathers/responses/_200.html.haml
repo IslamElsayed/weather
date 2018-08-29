@@ -1,0 +1,7 @@
+%br
+Results for #{@response['name']}
+%br
+- @response['main'].each do |key, value|
+  = label_tag key.to_sym
+  = label_tag value
+  %br
