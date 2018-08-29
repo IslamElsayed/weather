@@ -15,7 +15,7 @@ module Weather
 
     private
       def options
-        { units: "metric", APPID: "d7d9178a11162d5a87bd4bb0088dfc74" }
+        { units: "metric", APPID: Settings.open_weather.app_id }
       end
   end
 end
