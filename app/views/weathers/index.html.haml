@@ -2,10 +2,10 @@
 = form_with url: weathers_path, method: :get, local:true, scope: :q do |form|
   .form-group
     = form.label :city_name
-    = form.text_field :city_name, value: params[:q][:city_name]
+    = form.text_field :city_name, value: params[:q] && params[:q][:city_name]
   .form-group
     = form.label :country_code
-    = form.text_field :country_code, value: params[:q][:country_code]
+    = form.text_field :country_code, value: params[:q] && params[:q][:country_code]
 
   = form.submit :submit
 
